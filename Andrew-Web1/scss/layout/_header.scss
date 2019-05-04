@@ -4,8 +4,6 @@
 header{
   background-color: $white;
   padding: 12px 0 21px;
-  display: flex;
-  justify-content: flex-start;
 
   h1{
     font-size: rem-calc(32);
@@ -19,4 +17,9 @@ header{
     margin-left: 170px;
     color: $lightblue;
   }
+}
+
+#flex-header{
+  display: flex;
+  justify-content: space-between;
 }

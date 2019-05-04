@@ -24,10 +24,7 @@
   text-align: left;
   text-align: center;
   margin-top: 55px;
-
-  #hero-2-image {
-    width: 100%;
-  }
+  margin-bottom: -5px;
 
   h2 {
     font-size: 25px;
@@ -67,4 +64,9 @@
   p {
     font-weight: 700;
   }
+}
+
+#hero-2-image {
+  width: 100%;
+  margin-bottom: -6px;
 }

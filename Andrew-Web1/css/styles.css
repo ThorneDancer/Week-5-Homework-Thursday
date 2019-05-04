@@ -65,9 +65,7 @@ p {
 ================================ */
 header {
   background-color: #fff;
-  padding: 12px 0 21px;
-  display: flex;
-  justify-content: flex-start; }
+  padding: 12px 0 21px; }
   header h1 {
     font-size: rem-calc(32); }
   header span {
@@ -75,6 +73,10 @@ header {
   header i {
     margin-left: 170px;
     color: #1CBAC8; }
+
+#flex-header {
+  display: flex;
+  justify-content: space-between; }
 
 /* ================================
         Footer css
@@ -115,9 +117,8 @@ footer {
   color: #000;
   text-align: left;
   text-align: center;
-  margin-top: 55px; }
-  #hero-2 #hero-2-image {
-    width: 100%; }
+  margin-top: 55px;
+  margin-bottom: -5px; }
   #hero-2 h2 {
     font-size: 25px;
     font-weight: 600; }
@@ -140,6 +141,10 @@ footer {
 
 #bold-hero p {
   font-weight: 700; }
+
+#hero-2-image {
+  width: 100%;
+  margin-bottom: -6px; }
 
 /* ================================
         Skills css
@@ -176,6 +181,36 @@ footer {
         height: 9px;
         width: 95%; }
 
-/* ================================
-        Gallery css
-================================ */
+#gallery {
+  margin: 50px 10px;
+  width: 100%; }
+
+#gallery-top {
+  display: grid;
+  grid-template-columns: auto 10px auto;
+  grid-template-areas: "img-1 . img-3" "img-1 . img-4"; }
+  #gallery-top #img-1 {
+    grid-area: img-1; }
+  #gallery-top #img-3 {
+    grid-area: img-3; }
+  #gallery-top #img-4 {
+    grid-area: img-4; }
+
+#gallery-middle {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas: "img-5";
+  margin: 10px 0; }
+  #gallery-middle #img-5 {
+    grid-area: img-5; }
+
+#gallery-bottom {
+  display: grid;
+  grid-template-columns: auto 10px auto;
+  grid-template-areas: "img-2 . img-7" "img-6 . img-7"; }
+  #gallery-bottom #img-2 {
+    grid-area: img-2; }
+  #gallery-bottom #img-6 {
+    grid-area: img-6; }
+  #gallery-bottom #img-7 {
+    grid-area: img-7; }
