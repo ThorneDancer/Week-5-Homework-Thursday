@@ -1,0 +1,70 @@
+/* ================================
+        Heroes css
+================================ */
+#hero-1 {
+  color: $white;
+  text-align: center;
+  background-image: url("../img/hero/hero-1.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 288px 0 86px;
+
+  h1 {
+    font-size: 43px;
+  }
+
+  h2 {
+    color: $lightblue;
+    font-size: 21px;
+  }
+}
+
+#hero-2 {
+  color: $black;
+  text-align: left;
+  text-align: center;
+  margin-top: 55px;
+
+  #hero-2-image {
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 25px;
+    font-weight: 600;
+  }
+
+  h1 {
+    color: $lightblue;
+    padding-bottom: 50px;
+    font-size: 28px;
+  }
+
+  ul {
+    li {
+      font-weight: 400;
+      text-align: left;
+      margin-bottom: 50px;
+
+      h1 {
+        padding-bottom: 0;
+        font-size: 22px;
+        font-weight: 400;
+      }
+
+      p {
+        padding-top: 25px;
+      }
+
+      img {
+        margin-right: 19px;
+      }
+    }
+  }
+}
+
+#bold-hero {
+  p {
+    font-weight: 700;
+  }
+}

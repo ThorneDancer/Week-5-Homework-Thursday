@@ -1,0 +1,27 @@
+/* ================================
+        Base css
+================================ */
+ul{
+  margin: 0;
+  padding: 0;
+
+  li{
+    list-style: none;
+  }
+}
+
+a{
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.25s;
+}
+
+.content-grid{
+  display: grid;
+  grid-template-columns: 10px auto 10px;
+  grid-template-areas: ". content .";
+
+  .content-grid-item{
+    grid-area: content;
+  }
+}
