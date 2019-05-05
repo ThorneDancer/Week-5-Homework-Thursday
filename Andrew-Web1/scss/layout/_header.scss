@@ -16,10 +16,12 @@ header{
   i{
     margin-left: 170px;
     color: $lightblue;
+    font-size: rem-calc(32);
   }
 }
 
 #flex-header{
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }

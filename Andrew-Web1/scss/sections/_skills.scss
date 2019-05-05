@@ -10,21 +10,18 @@
     padding: 55px 0 32px;
   }
 
-  p {
-    padding-bottom: 49px;
-  }
 
   ul {
     margin-bottom: 49px;
 
     li {
-      h3 {
-        display: inline;
-      }
+      margin-top: 45px;
 
-      h4 {
-        display: inline;
-        margin-left: 135px;
+      .percentages{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
       }
 
       .background-bar {

@@ -10,12 +10,12 @@
   padding: 288px 0 86px;
 
   h1 {
-    font-size: 43px;
+    font-size: rem-calc(43);
   }
 
   h2 {
     color: $lightblue;
-    font-size: 21px;
+    font-size: rem-calc(21);
   }
 }
 
@@ -27,14 +27,14 @@
   margin-bottom: -5px;
 
   h2 {
-    font-size: 25px;
+    font-size: rem-calc(25);
     font-weight: 600;
   }
 
   h1 {
     color: $lightblue;
     padding-bottom: 50px;
-    font-size: 28px;
+    font-size: rem-calc(28);
   }
 
   ul {
@@ -64,7 +64,7 @@
 #bold-hero {
   p {
     font-weight: 700;
-    line-height: 31px;
+    line-height: rem-calc(31);
   }
 }
 
