@@ -25,6 +25,9 @@ a {
   .content-grid .content-grid-item {
     grid-area: content; }
 
+html {
+  margin: -8px; }
+
 /* ================================
         Normalize css
 ================================ */
@@ -135,12 +138,14 @@ footer {
       font-size: 22px;
       font-weight: 400; }
     #hero-2 ul li p {
-      padding-top: 25px; }
+      padding-top: 25px;
+      line-height: 31px; }
     #hero-2 ul li img {
       margin-right: 19px; }
 
 #bold-hero p {
-  font-weight: 700; }
+  font-weight: 700;
+  line-height: 31px; }
 
 #hero-2-image {
   width: 100%;
@@ -163,7 +168,7 @@ footer {
       display: inline; }
     #skills ul li h4 {
       display: inline;
-      text-align: right; }
+      margin-left: 135px; }
     #skills ul li .background-bar {
       background-color: #000;
       height: 9px;
@@ -183,34 +188,47 @@ footer {
 
 #gallery {
   margin: 50px 10px;
-  width: 100%; }
-
-#gallery-top {
   display: grid;
-  grid-template-columns: auto 10px auto;
-  grid-template-areas: "img-1 . img-3" "img-1 . img-4"; }
-  #gallery-top #img-1 {
-    grid-area: img-1; }
-  #gallery-top #img-3 {
-    grid-area: img-3; }
-  #gallery-top #img-4 {
-    grid-area: img-4; }
-
-#gallery-middle {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-areas: "img-5";
-  margin: 10px 0; }
-  #gallery-middle #img-5 {
-    grid-area: img-5; }
-
-#gallery-bottom {
-  display: grid;
-  grid-template-columns: auto 10px auto;
-  grid-template-areas: "img-2 . img-7" "img-6 . img-7"; }
-  #gallery-bottom #img-2 {
-    grid-area: img-2; }
-  #gallery-bottom #img-6 {
-    grid-area: img-6; }
-  #gallery-bottom #img-7 {
-    grid-area: img-7; }
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-gap: 10px; }
+  #gallery .gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block; }
+  #gallery #img-1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3; }
+  #gallery #img-2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6; }
+  #gallery #img-3 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2; }
+  #gallery #img-4 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3; }
+  #gallery #img-5 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 5; }
+  #gallery #img-6 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 6;
+    grid-row-end: 7; }
+  #gallery #img-7 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 7; }
